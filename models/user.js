@@ -22,6 +22,9 @@ let userSchema = new mongoose.Schema({
       //required: true,
       //unique: true,
       minlength: [6, "Password must be more than 6 characters long"]
+    },
+    employeeId : {
+      type : Number
     }
 }) 
 
