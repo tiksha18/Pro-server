@@ -58,10 +58,8 @@ async function sendEmail(message)
             service: "gmail",
             host: "smtp.gmail.com",
             auth: {
-                user: "varshney.tiksha18@gmail.com",
-                pass : "qwgfvpdmzsflsajl"
-                //pass : "iyqsmvmdbdbipigp"
-                //pass : "wvgnomseipemibhj" 
+                user: "test.mail.120092@gmail.com",
+                pass : "iyqsmvmdbdbipigp"
             }
         });
 
@@ -93,8 +91,8 @@ async function signup(req, res) {
         })
         
         let message = {
-            from: "varshney.tiksha18@gmail.com", // sender address
-            to: "varshney.tiksha18@gmail.com", // list of receivers // ( in run time => use email )
+            from: "test.mail.120092@gmail.com", // sender address
+            to: "test.mail.120092@gmail.com", // list of receivers // ( in run time => use email )
             subject: "Employee ID", // Subject line
             text: String(randomNumber), // plain text body
         }
